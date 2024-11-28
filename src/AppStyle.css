@@ -1,0 +1,234 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black !important;
+  font-family: 'Charlotte', 'waterfall';
+}
+
+/* ######################################## */
+
+.custNav {
+  position: sticky; 
+  top: 20px; 
+  width: 100%; 
+  z-index: 10; /* Keep above other elements */
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  /* box-shadow: 
+  0px 4px 10px rgba(255, 253, 253, 0.5); */
+}
+
+/* Nav styles */
+.navbar {
+  /* height: 7vh; */
+  position: sticky;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 10;
+
+}
+
+.navbar .container{
+  position: relative;
+  gap: 50px;
+  text-decoration: none; /* Remove underline */
+  font-size: 36px;
+  font-weight: 1000;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  /* transition: color 0.3s ease, transform 0.3s ease; */
+}
+.navbar .container .nav-link{
+  color: rgb(248, 174, 255); /* Hover effect */
+  font-family: "waterfall";
+  margin: 2px 20px;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(255, 255, 255); /* Hover effect */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+/* ######################################## */
+
+.sectionZero {
+  position: sticky;
+  top: 50px;
+  height: 50vh;
+  z-index: 5;
+  text-align: center;
+  margin: 120px 100px;
+  padding: 120px 1px;
+  font-family: "Charlotte";
+  background-color: black; /* Set the background to black for neon effect */
+}
+
+/* Neon Text Styling */
+.neonText {
+  position: relative;
+  font-size: 96px;
+  font-weight: 100;
+  color: #fa5efa; 
+  /* text-transform: uppercase; */
+  text-shadow: 
+  0 0 5px #ff3aff, 
+  0 0 10px #ff58ff, 
+  0 0 20px #ff71ff, 
+  0 0 30px #ff84ff, 
+  0 0 40px #fd88fd, 
+  0 0 50px #ff99ff, 
+  0 0 75px #ffc2ff;
+  animation: flicker 4.5s infinite; /* Flickering animation */
+}
+
+/* Flickering Effect */
+@keyframes flicker {
+  0%, 13%, 21%, 23%, 29%, 53%, 54%, 56%, 100% {
+    text-shadow: 
+      0 0 5px #ff3aff, 
+      0 0 10px #ff58ff, 
+      0 0 20px #ff71ff, 
+      0 0 30px #ff84ff, 
+      0 0 40px #fd88fd, 
+      0 0 50px #ff99ff, 
+      0 0 75px #ffc2ff;
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow: none; /* Turns off the glow momentarily */
+    opacity: 0.8; /* Slight dimming */
+  }
+}
+
+/* Sloped Line Styling */
+.slopedLine {
+  position: absolute;
+  /* bottom: -10px; */
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg); /* Slant the line */
+  width: 500px;
+  height: 5px;
+  background: linear-gradient(90deg, #ff3aff, #ffc2ff); /* Neon gradient */
+  box-shadow: 
+  0 0 5px #ff3aff, 
+  0 0 10px #ff58ff, 
+  0 0 20px #ff71ff, 
+  0 0 30px #ff84ff, 
+  0 0 40px #fd88fd, 
+  0 0 50px #ff99ff, 
+  0 0 75px #ffc2ff;
+  animation: flickerLine 4.5s infinite; /* Sync flicker with the text */
+}
+
+/* Flickering Effect for the Line */
+@keyframes flickerLine {
+  0%, 13%, 21%, 23%, 29%, 53%, 54%, 56%, 100% {
+    box-shadow: 
+      0 0 5px #ff00ff, 
+      0 0 10px #ff00ff, 
+      0 0 20px #ff33ff, 
+      0 0 30px #ff66ff, 
+      0 0 50px #ff66ff;
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    box-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+
+
+.imagecolumn img { 
+  width: 100%; 
+  max-width: 150px; 
+  max-height: 150px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px rgb(216, 99, 255, 0.5);
+  margin: 10px auto; 
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ######################################## */
+
+
+.sectionOne{
+  position: sticky;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 300px 100px;
+  z-index: 6;
+  background-color: darkturquoise;
+}
+
+
+.sectionTwo .container{
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  height: 110vh;
+  background-image: url('./img/Bg2.png'); /* Correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sectionThree {
+  position: relative;
+  z-index: 6;
+  padding: 150px;
+
+}
+/* ######################################## */
+
+.contactSection {
+  font-family: "Time";
+  color: #ff9bfc; 
+  text-align: left;
+  padding: 40px 20px;
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(148, 42, 42, 0.1); /* Optional: subtle shadow */
+  margin: 20px auto;
+  max-width: 80%; /* Keep the content centered and neat */
+}
+
+.contactSection h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff9bfc; /* Slightly darker pink for the header */
+  font-weight: bold;
+  text-align: center;
+}
+
+.contactSection p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.contactSection a {
+  color: #ff6ff1; /* Pink link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactSection a:hover {
+  color: #ff3c6f; /* Darker pink for hover state */
+  text-decoration: underline;
+}
+
