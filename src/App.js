@@ -130,41 +130,12 @@ function App() {
       </Container>
     </div>
 
-    {/* <div className="sectionOne">
-        <Container>
-            <Row>
-              {images.map((img, index) => (
-                <Col
-                  key={index}
-                  xs={12} 
-                  sm={6}  
-                  md={4}  
-                  lg={3}  
-                  className="imagecolumn"
-                >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                  />
-                </Col>
-              ))}
-            </Row>
-            
-          </Container>
-
-    </div> */}
     
     <div className="sectionThree">
       <Box sx={{ maxHeight: "80vh", overflowY: "auto", padding: 2 }}>
         {newsData.map((news) => (
           <Card sx={{ maxWidth: "600px", marginBottom: 2 }} key={news.id}>
             <CardActionArea>
-              {/* <CardMedia
-                component="img"
-                height="140"
-                // image={news.image}
-                alt={news.title}
-              /> */}
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {news.title}
@@ -178,14 +149,7 @@ function App() {
         ))}
       </Box>
 
-          
-              {/* <h1>Latest News</h1> */}
-
-              {/* <h1>Accept to collaborate on Ms. Mehrkian's thesis 19.6.2024</h1> */}
-
-
-         
-    
+        
     </div>
               
     
