@@ -124,6 +124,7 @@ function App() {
     
     <div className="sectionThree">
       Latest News
+      <br />
       <Box sx={{ maxHeight: "80vh", overflowY: "auto", padding: 2 }}>
         {newsData.map((news) => (
           <Card sx={{ maxWidth: "600px", marginBottom: 2 }} key={news.id}>
