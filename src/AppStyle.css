@@ -112,10 +112,10 @@ body, html {
   position: absolute;
   /* bottom: -10px; */
   left: 50%;
-  transform: translateX(-50%) rotate(-5deg); /* Slant the line */
-  width: 500px;
+  transform: translateX(-50%) rotate(-7deg); /* Slant the line */
+  width: 450px;
   height: 5px;
-  background: linear-gradient(90deg, #ff3aff, #ffc2ff); /* Neon gradient */
+  background: linear-gradient(90deg, #fa46fa, #ffcaff); /* Neon gradient */
   box-shadow: 
   0 0 5px #ff3aff, 
   0 0 10px #ff58ff, 
@@ -126,6 +126,7 @@ body, html {
   0 0 75px #ffc2ff;
   animation: flickerLine 4.5s infinite; /* Sync flicker with the text */
 }
+
 
 /* Flickering Effect for the Line */
 @keyframes flickerLine {
@@ -163,6 +164,16 @@ body, html {
   }
 }
 
+
+
+@media (max-width: 705px) {
+	.slopedLine {
+    width: 300px;
+	}
+  .navbar .container .nav-link{
+    margin: 2px 2px;
+  }
+}
 
 /* ######################################## */
 

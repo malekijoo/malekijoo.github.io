@@ -1,21 +1,12 @@
 import './AppStyle.css';
 import { Container,
   Navbar,
-  Nav, 
-  Row,
-  Col,
+  Nav
  } from "react-bootstrap";
  
- import { Card, CardActionArea, CardMedia, CardContent, Typography, Box } from "@mui/material";
-import { title } from 'framer-motion/client';
+ import { Card, CardActionArea, CardContent, Typography, Box } from "@mui/material";
 
 
- const images = [
-  { src: "./img/1.jpg", alt: "Image 1", delay: 600 },
-  { src: "./img/CVtag.jpg", alt: "Image 2", delay: 800 },
-  { src: "./img/3.jpg", alt: "Image 3", delay: 1000 },
-  { src: "./img/4.jpg", alt: "Image 4", delay: 1200 },
-];
 
 const newsData = [
   { 
