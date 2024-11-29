@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.224206ae.css",
+    "main.js": "/static/js/main.efb20005.js",
+    "static/media/Bg2.png": "/static/media/Bg2.ff2856b0261d513e5118.png",
+    "static/media/Waterfall-Regular.ttf": "/static/media/Waterfall-Regular.9b22fc59b98ff5b2cddd.ttf",
+    "static/media/Charlotte.otf": "/static/media/Charlotte.916fdb88ee235f1c6a6e.otf",
+    "index.html": "/index.html",
+    "main.224206ae.css.map": "/static/css/main.224206ae.css.map",
+    "main.efb20005.js.map": "/static/js/main.efb20005.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224206ae.css",
+    "static/js/main.efb20005.js"
+  ]
+}
