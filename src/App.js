@@ -82,6 +82,13 @@ const newsData = [
   },
 ]
 
+const images = [
+  { src: "amir.jpeg", alt: "amirAvatar" },
+  { src: "Bg2.png", alt: "BgImage" },
+  { src: "CVtag.jpg", alt: "CVImage" },
+  { src: "update", alt: "update"  },
+];
+
 
 function App() {
   return (
@@ -129,6 +136,12 @@ function App() {
         {newsData.map((news) => (
           <Card sx={{ maxWidth: "600px", marginBottom: 2 }} key={news.id}>
             <CardActionArea>
+            {/* <CardMedia
+              component="img"
+              height="140"
+              image={news.image}
+              alt={news.title}
+            /> */}
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {news.title}
