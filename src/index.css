@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Charlotte';
-    src: url('./FontFamily/Charlotte.otf') format('truetype');
+    src: url('../public/FontFamily/Charlotte.otf') format('opentype');
     font-weight: 500; 
     font-style: normal;
     font-display: swap;
@@ -9,13 +9,8 @@
 
 @font-face {
     font-family: 'waterfall';
-    src: url('./FontFamily/Waterfall/Waterfall-Regular.ttf') format('truetype');
+    src: url('../public/FontFamily/Waterfall/Waterfall-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-
-
-  
-
-

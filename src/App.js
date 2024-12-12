@@ -3,9 +3,10 @@ import { Container,
   Navbar,
   Nav
  } from "react-bootstrap";
- 
- import { Card, CardActionArea, CardContent, Typography, Box } from "@mui/material";
 
+import { Card, CardActionArea, CardContent, Typography, Box } from "@mui/material";
+import Footer from './footer'
+import React, { useRef } from 'react';
 
 
 const newsData = [
@@ -23,7 +24,6 @@ const newsData = [
     id: 3, 
     title: "15.10.2024",
     description: "Accept to be the coach of Ali for doing his paper",
-
   },
   { 
     id: 4, 
@@ -82,15 +82,15 @@ const newsData = [
   },
 ]
 
-const images = [
-  { src: "amir.jpeg", alt: "amirAvatar" },
-  { src: "Bg2.png", alt: "BgImage" },
-  { src: "CVtag.jpg", alt: "CVImage" },
-  { src: "update", alt: "update"  },
-];
+
 
 
 function App() {
+  const footerRef = useRef(null); 
+
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="body">
       {/* Navbar Section */}
@@ -101,10 +101,10 @@ function App() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="https://github.com/malekijoo/">GitHub</Nav.Link>
               <Nav.Link href="https://scholar.google.com/citations?user=XnMNTD0AAAAJ&hl=en">GoogleScholar</Nav.Link>
-              <Nav.Link href="CV_AmirHMalekijoo.pdf" download>
+              <Nav.Link href="CV_AmirHMalekijoo_.pdf" download>
                 CV
               </Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link onClick={scrollToFooter}>Contact</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -128,13 +128,19 @@ function App() {
       </Container>
     </div>
 
+    <div ref={footerRef} className='sectionFour'>
+
+      <Footer />
+
+    </div>
     
-    <div className="sectionThree">
+    <div className="sectionThree" style={{fontFamily: "Time"}}>
       Latest News
+      <br />
       <br />
       <Box sx={{ maxHeight: "80vh", overflowY: "auto", padding: 2 }}>
         {newsData.map((news) => (
-          <Card sx={{ maxWidth: "600px", marginBottom: 2 }} key={news.id}>
+          <Card sx={{ maxWidth: "600px", marginBottom: 2, backgroundColor: "rgb(210, 210, 255)"}} key={news.id}>
             <CardActionArea>
             {/* <CardMedia
               component="img"
@@ -154,19 +160,19 @@ function App() {
           </Card>
         ))}
       </Box>
-
+        
         
     </div>
               
     
-    <div className="contactSection">
+    {/* <div className="contactSection">
       <Container>
         <h1>Contact Me</h1>
         <p>Email: <a href="mailto:amirhossein.maleki1990@gmail.com">amirhossein.maleki1990@gmail.com</a></p>
         <p>Phone: <a href="tel:+989383211689">+98 9383211689</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/amirhmalekijoo1990/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </Container>
-    </div>
+    </div> */}
 
 
 
@@ -175,3 +181,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
