@@ -1,10 +1,14 @@
+body {
+    font-family: 'Charlotte', 'waterfall'; /* 'sans-serif' is the fallback */
+}
+
 
 @font-face {
     font-family: 'Charlotte';
     src: url('../public/FontFamily/Charlotte.otf') format('opentype');
     font-weight: 500; 
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
@@ -12,5 +16,5 @@
     src: url('../public/FontFamily/Waterfall/Waterfall-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }

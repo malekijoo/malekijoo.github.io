@@ -12,7 +12,7 @@ import React, { useRef } from 'react';
 const newsData = [
   { 
     id: 1,
-    title: "29.10.2024",
+    title: "15.12.2024",
     description: "I am starting a paper within HCI", 
   },
   { 
@@ -123,10 +123,7 @@ function App() {
       </Container>
     </div>
 
-    <div className='sectionTwo'>
-      <Container>
-      </Container>
-    </div>
+
 
     <div ref={footerRef} className='sectionFour'>
 
@@ -134,21 +131,21 @@ function App() {
 
     </div>
     
-    <div className="sectionThree" style={{fontFamily: "Time"}}>
+    {/* <div className="sectionThree" style={{fontFamily: "Time"}}>
       Latest News
       <br />
       <br />
       <Box sx={{ maxHeight: "80vh", overflowY: "auto", padding: 2 }}>
         {newsData.map((news) => (
           <Card sx={{ maxWidth: "600px", marginBottom: 2, backgroundColor: "rgb(210, 210, 255)"}} key={news.id}>
-            <CardActionArea>
+            <CardActionArea>*/}
             {/* <CardMedia
               component="img"
               height="140"
               image={news.image}
               alt={news.title}
             /> */}
-              <CardContent>
+             {/* <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {news.title}
                 </Typography>
@@ -159,22 +156,16 @@ function App() {
             </CardActionArea>
           </Card>
         ))}
-      </Box>
+      </Box> 
         
         
-    </div>
-              
-    
-    {/* <div className="contactSection">
+     </div> */}
+
+
+    <div className='sectionTwo'>
       <Container>
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:amirhossein.maleki1990@gmail.com">amirhossein.maleki1990@gmail.com</a></p>
-        <p>Phone: <a href="tel:+989383211689">+98 9383211689</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/amirhmalekijoo1990/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </Container>
-    </div> */}
-
-
+    </div>
 
     </div>
   );
