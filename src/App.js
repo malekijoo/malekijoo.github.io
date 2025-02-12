@@ -27,9 +27,9 @@ function App() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="https://github.com/malekijoo/">GitHub</Nav.Link>
               <Nav.Link href="https://scholar.google.com/citations?user=XnMNTD0AAAAJ&hl=en">GoogleScholar</Nav.Link>
-              <Nav.Link href="CV_AmirHMalekijoo_.pdf" download>
-                CV
-              </Nav.Link>
+              {/* <Nav.Link href="CV_AmirHMalekijoo_.pdf" download> */}
+                {/* CV */}
+              {/* </Nav.Link> */}
               <Nav.Link onClick={scrollToFooter}>Contact</Nav.Link>
             </Nav>
           </Container>
